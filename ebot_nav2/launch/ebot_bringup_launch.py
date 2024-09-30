@@ -84,8 +84,9 @@ def generate_launch_description():
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
-        default_value=os.path.join(ebot_nav2_dir, 'maps', 'map.yaml'),
+        default_value=os.path.join(ebot_nav2_dir, 'maps', 'map.yaml'),  ## Update the map config here
         description='Full path to map yaml file to load')
+
 
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         'use_sim_time',
@@ -144,8 +145,9 @@ def generate_launch_description():
        executable='ekf_node',
        name='ekf_filter_node',
        output='screen',
-       parameters=[os.path.join(ebot_nav2_dir, 'config/ekf.yaml'), {'use_sim_time': use_sim_time}]
-)
+       parameters=[os.path.join(ebot_nav2_dir, 'config/ekf.yaml'), {'use_sim_time': use_sim_time}] ##Loads the ekf.yaml file
+        )
+
 
     bringup_cmd_group = GroupAction([
         PushRosNamespace(
