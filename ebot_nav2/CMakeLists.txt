@@ -42,6 +42,7 @@ install(
     config
     maps
     params
+    scripts
     rviz
   DESTINATION
     share/${PROJECT_NAME}/
@@ -52,7 +53,9 @@ install(
   DESTINATION lib/${PROJECT_NAME}
 )
 
-install(PROGRAMS
+install(
+  PROGRAMS
+    scripts/nav2_cmd.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

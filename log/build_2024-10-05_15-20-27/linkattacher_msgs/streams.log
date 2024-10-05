@@ -1,0 +1,48 @@
+[0.024s] Invoking command in '/home/bhaskar/colcon_ws/src/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bhaskar/new_ws/install/ur5_control:/home/bhaskar/colcon_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/bhaskar/colcon_ws/src/linkattacher_msgs -DCMAKE_INSTALL_PREFIX=/home/bhaskar/colcon_ws/src/install/linkattacher_msgs
+[1.102s] -- The C compiler identification is GNU 11.4.0
+[1.927s] -- The CXX compiler identification is GNU 11.4.0
+[2.319s] -- Detecting C compiler ABI info
+[2.469s] -- Detecting C compiler ABI info - done
+[2.474s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.474s] -- Detecting C compile features
+[2.474s] -- Detecting C compile features - done
+[2.476s] -- Detecting CXX compiler ABI info
+[2.652s] -- Detecting CXX compiler ABI info - done
+[2.657s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.657s] -- Detecting CXX compile features
+[2.657s] -- Detecting CXX compile features - done
+[2.659s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.216s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.745s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.446s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.495s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.632s] Invoked command in '/home/bhaskar/colcon_ws/src/build/linkattacher_msgs' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bhaskar/new_ws/install/ur5_control:/home/bhaskar/colcon_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/bhaskar/colcon_ws/src/linkattacher_msgs -DCMAKE_INSTALL_PREFIX=/home/bhaskar/colcon_ws/src/install/linkattacher_msgs
+[4.635s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1871, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_cmake/build.py", line 59, in build
+    rc = await extension.build(
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 87, in build
+    rc = await self._reconfigure(args, env)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/build.py", line 182, in _reconfigure
+    buildfile = get_buildfile(cmake_cache)
+  File "/usr/lib/python3/dist-packages/colcon_cmake/task/cmake/__init__.py", line 114, in get_buildfile
+    if 'Visual Studio' in generator:
+TypeError: argument of type 'NoneType' is not iterable

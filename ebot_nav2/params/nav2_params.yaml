@@ -56,11 +56,6 @@ amcl_rclcpp_node:
   ros__parameters:
     use_sim_time: True
 
-
-
-
-
-
 bt_navigator:
   ros__parameters:
     use_sim_time: True

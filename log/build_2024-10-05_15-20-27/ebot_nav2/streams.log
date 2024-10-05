@@ -1,0 +1,15 @@
+[0.028s] Invoking command in '/home/bhaskar/colcon_ws/src/build/ebot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bhaskar/new_ws/install/ur5_control:/home/bhaskar/colcon_ws/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/bhaskar/colcon_ws/src/ebot_nav2 -DCMAKE_INSTALL_PREFIX=/home/bhaskar/colcon_ws/src/install/ebot_nav2
+[1.109s] -- The C compiler identification is GNU 11.4.0
+[2.001s] -- The CXX compiler identification is GNU 11.4.0
+[2.436s] -- Detecting C compiler ABI info
+[2.596s] -- Detecting C compiler ABI info - done
+[2.600s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.600s] -- Detecting C compile features
+[2.600s] -- Detecting C compile features - done
+[2.602s] -- Detecting CXX compiler ABI info
+[2.801s] -- Detecting CXX compiler ABI info - done
+[2.874s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.877s] -- Detecting CXX compile features
+[2.882s] -- Detecting CXX compile features - done
+[2.906s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.905s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
